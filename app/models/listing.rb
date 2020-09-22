@@ -33,7 +33,7 @@ class Listing
   end
 
   def self.most_popular
-    all.max_by(2) {|listing| listing.trip_count}
+    all.max_by {|listing| listing.trip_count}
   end
 
 
